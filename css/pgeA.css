@@ -1,0 +1,27 @@
+
+/*设置页面1 背景图*/
+.a_bckground{width:100%; height:100%; position:absolute;}
+.a_bckground_top{width:100%; height:71.6%; background-image: url("../img/background/a_background_top.png");background-size: 100% 100%;}
+.a_bckground_ctr{width:100%; height:13.1%; background-image: url("../img/background/a_background_middle.png");background-size: 100% 100%;}
+.a_bckground_btm{width:100%; height:15.3%; background-image: url("../img/background/a_background_botton.png");background-size: 100% 100%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

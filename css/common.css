@@ -1,0 +1,79 @@
+
+*{padding:0; margin:0;}
+li{list-style: none;}
+#content{width: 80%; height:80%; top:15%;left:10%;overflow:hidden; position:absolute;border:1px solid #ccc;}
+.content-wrap{position:relative;}
+.content-wrap >li{width:100%;height:100%;background:#CAE1FF;color:red;float:left;overflow:hidden;position:relative;}
+li:nth-child(2) {background: #9BCD9B;}
+li:nth-child(3) {background: yellow; }
+
+
+/*人物的高度*/
+.charactor{width:151px; height:291px; position:absolute;background: url("../img/boy.png") no-repeat 0px -291px;}
+/*定义动画*/
+.move{
+	/*动画@keyframes 名称*/
+	-webkit-animation-name: personSlow;
+	/*动画完成一个周期的时间*/
+	-webkit-animation-duration: 950ms;
+	/*动画播放的次数*/
+	-webkit-animation-iteration-count: infinite;
+	/*动画播放的方式 一帧一帧*/
+	-webkit-animation-timing-function: steps(1,start);
+
+	/*动画@keyframes 名称*/
+	-moz-animation-name:personSlow;
+	/*动画完成一个周期的时间*/
+	-moz-animation-duration: 950ms;
+	/*动画播放的次数*/
+	-moz-animation-iteration-count: infinite;
+	/*动画播放的方式 一帧一帧*/
+	-moz-animation-timing-function: steps(1,start)
+}
+
+
+@-webkit-keyframes personSlow{
+	0%{
+		background-position:0 -291px;
+	}
+	25%{
+		background-position:-602px -0px;
+	}
+	50%{
+		background-position:-302px -291px;
+	}
+	75%{
+		background-position:-151px -291px;
+	}
+	100%{
+		background-position:0 -291px;
+	}
+}
+
+@-moz-keyframes personSlow{
+	0%{
+		background-position:0 -291px;
+	}
+	25%{
+		background-position:-602px -0px;
+	}
+	50%{
+		background-position:-302px -291px;
+	}
+	75%{
+		background-position:-151px -291px;
+	}
+	100%{
+		background-position:0 -291px;
+	}
+}
+
+/*暂停动画*/
+.pauseWalk{
+	-webkit-animation-play-state:paused;
+	-moz-animation-play-state:paused;
+}
+
+
+
+
